@@ -1,15 +1,12 @@
 <?php
-
 require_once 'config.php';
-if (isset($_POST['add_siswa'])) {
+if (isset($_POST['add_petugas'])) {
 
-    $nisn = $_POST['nisn'];
+    $id_petugas = $_POST['id_petugas'];
     $nama = $_POST['nama'];
-    $alamat = $_POST['alamat'];
-    $no_hp = $_POST['no_hp'];
     $password = $_POST['password'];
-
-    $query = "INSERT INTO siswa VALUES ('$nisn','$nama','$alamat','$no_hp','$password')";    
+    
+    $query = "INSERT INTO petugas VALUES ('$id_petugas','$nama','$password')";    
     $result = mysqli_query($db, $query);
 
     if(!$result){

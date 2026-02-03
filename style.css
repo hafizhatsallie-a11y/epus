@@ -42,6 +42,7 @@ input {
   border-radius: 10px;
   padding: 5px;
   background-color: #fbf5dd;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -59,9 +60,12 @@ table {
   width: 700px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #a6cdc6;
-  /* background-color: rgb(225, 225, 225); */
+
+  margin: 0 auto; /* INI KUNCINYA */
+
+  background-color: #5fafa0;
 }
+
 
 th {
   font-size: 20px;
@@ -101,4 +105,9 @@ td {
 
 .btn-remove {
   text-decoration: none;
+}
+
+/* Center text di input text */
+input[type="text"] {
+  text-align: center;
 }
